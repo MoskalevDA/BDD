@@ -19,8 +19,8 @@ public class TransferTest {
         var loginPage = new LoginPage();
         var authInfo = DataHelper.getAuthInfo();
         var verificationPage =  loginPage.validLogin(authInfo);
-        var veificationCode = DataHelper.getValidCode(authInfo);
-        dashboardPage = verificationPage.validVerify(veificationCode);
+        var verificationCode = DataHelper.getValidCode(authInfo);
+        dashboardPage = verificationPage.validVerify(verificationCode);
         balance(dashboardPage);
     }
 
